@@ -1,0 +1,21 @@
+/*  
+Basenji Search engine
+Jessica Kincaid
+July 8, 2019 */
+
+header {
+    display: flex;
+}
+
+title {
+    flex-direction: row;
+    margin: 4em;
+}
+div.jumbotron {
+    margin: 20%;
+}
+img {
+    margin: 2em;
+    border-radius: 4em;
+    max-width: 60vh;
+}
