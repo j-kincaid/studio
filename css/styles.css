@@ -279,8 +279,9 @@ p.description {
 }
 
 p.description {
-    margin: 0;
+    margin-top: 0.75vw;
     height: 2em;
+    font-style: italic;
 }
 
 p.concept {
