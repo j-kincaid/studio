@@ -3,7 +3,7 @@
 jessicakincaid.com
 public_html revision
 
-July 21, 2019
+July 22, 2019
 
 
 /* color palette
@@ -30,7 +30,7 @@ background Darkest green =  background-color: rgb(13, 26, 0);
 
 body {
     background-color: rgb(165, 177, 149);
-    font-size: 1.8vw;
+    font-size: 0.5rem;
     line-height: 1.4;
     width: 98%;
 }
@@ -73,6 +73,7 @@ img {
     margin-right: auto;
 }
 
+div.container h2,
 div.primary-col h2,
 div.secondary-col h2 {
     font-size: 1.25em;
@@ -96,13 +97,12 @@ div.secondary-col h2 {
 .top-nav {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .name a,
 .top-nav a {
-    font-size: 1.25em;
-    /* padding: 3vw; */
+    font-size: .25rem;
     text-transform: uppercase;
     text-align: center;
     background-color: rgb(13, 26, 0);
@@ -115,10 +115,10 @@ ul.top-nav {
 }
 
 ul.top-nav li {
+    font-size: 1.25rem;
     max-width: 8vw;
     display: block;
     margin: 2vw 3vw;
-    /* padding-left: 5vw; */
 }
 
 ul.top-nav li a:hover,
@@ -140,7 +140,7 @@ div.dropdown {
 }
 
 .dropbtn {
-    font-size: 1.25em;
+    font-size: 1.25rem;
     /* color: rgb(186, 245, 109); */
     text-transform: uppercase;
     background-color: rgb(13, 26, 0);
@@ -160,7 +160,7 @@ div.dropdown {
     color: rgb(142, 243, 11);
     padding: .75em 2.5em;
     max-width: 8vw;
-    font-size: 1em;
+    font-size: 1.25rem;
     text-decoration: none;
     display: block;
 }
@@ -259,12 +259,12 @@ div.hero {
 
 ul.detail-list li {
     color: rgb(215, 223, 204);
-    font-size: small;
     margin: 0;
 }
 
 p.details {
     display: inline;
+    font-size: 0.85rem;
 }
 
 ul.detail-list {
@@ -286,7 +286,7 @@ p.description {
 }
 
 p.concept {
-    font-size: 1.75vw;
+    font-size: 1.1rem;
     padding: 1em;
     color: rgb(215, 223, 204);
     background-color: rgb(13, 26, 0);
@@ -340,4 +340,154 @@ footer ul li {
 
 footer ul {
     display: flex;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+/* Extra tiny devices (360px and down) */
+
+@media only screen and (max-width: 360px) {
+    body {
+        font-size: 1.5rem;
+        line-height: 1.3;
+    }
+    h1.name a {
+        font-size: 1.75rem;
+    }
+    p {
+        font-size: .5rem;
+        margin-bottom: 1.8em;
+    }
+    div.container h2,
+    div.primary-col h2,
+    div.secondary-col h2,
+    div#contactForm h2 {
+        font-size: 0.85rem;
+    }
+    ul.detail-list li {
+        font-size: 0.25rem;
+    }
+    p.details {
+        font-size: .75rem;
+    }
+    p.description {
+        font-size: .75rem;
+    }
+    ul.top-nav {
+        margin-right: 3rem;
+    }
+    ul.top-nav li a,
+    div.dropdown-content li a,
+    button.dropbtn {
+        font-size: .75rem;
+    }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 1.25rem;
+    }
+    h2.headline {
+        font-size: 1.35rem;
+    }
+    p {
+        font-size: 1.65rem;
+        margin-bottom: 1.8em;
+    }
+    div.container h2,
+    div.primary-col h2,
+    div.secondary-col h2 {
+        font-size: .75rem;
+    }
+    ul.top-nav li a {
+        font-size: .5rem;
+        margin: 2px;
+    }
+    ul.top-nav li a,
+    div.dropdown-content li a,
+    button.dropbtn {
+        margin: 2px;
+        font-size: .85rem;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    body {
+        font-size: 1rem;
+    }
+    h2.headline {
+        font-size: 1.75rem;
+    }
+    p {
+        font-size: 0.75rem;
+        margin-bottom: 1.8em;
+    }
+    div.container h2,
+    div.primary-col h2,
+    div.secondary-col h2 {
+        font-size: 1rem;
+    }
+    ul.top-nav li {
+        font-size: .75rem;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    body {
+        font-size: 0.95rem;
+    }
+    h2.headline {
+        font-size: 2rem;
+    }
+    div.container h2,
+    div.primary-col h2,
+    div.secondary-col h2 {
+        font-size: 1rem;
+    }
+    p.description {
+        font-size: 1.25rem;
+    }
+    ul.top-nav li {
+        font-size: .5rem;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    body {
+        font-size: 1rem;
+    }
+    h2.headline {
+        font-size: 2.5rem;
+    }
+    ul.top-nav li a {
+        font-size: 1.25rem;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    body {
+        font-size: 2.5rem;
+    }
+    h2.headline {
+        font-size: 2.5rem;
+    }
 }
