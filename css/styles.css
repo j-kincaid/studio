@@ -356,6 +356,9 @@ footer ul {
     h1.name a {
         font-size: 1.75rem;
     }
+    div.hero h2 {
+        font-size: 2rem;
+    }
     p {
         font-size: .5rem;
         margin-bottom: 1.8em;
@@ -364,7 +367,7 @@ footer ul {
     div.primary-col h2,
     div.secondary-col h2,
     div#contactForm h2 {
-        font-size: 0.85rem;
+        font-size: 0.75rem;
     }
     ul.detail-list li {
         font-size: 0.25rem;
@@ -373,11 +376,14 @@ footer ul {
         font-size: .75rem;
     }
     p.description {
-        font-size: .75rem;
+        font-size: .5rem;
     }
     ul.top-nav li {
         margin-right: 5rem;
         font-size: 1rem;
+    }
+    h3.accomplish {
+        font-size: 1.85rem;
     }
 }
 
@@ -401,6 +407,10 @@ footer ul {
         font-size: 1.5rem;
         margin: 2px;
     }
+    div.primary-col h2,
+    p.description {
+        font-size: 1.25rem;
+    }
     ul.top-nav li a,
     div.dropdown-content li a,
     button.dropbtn {
@@ -409,16 +419,22 @@ footer ul {
         border-style: none;
     }
     div.container h2,
-    div.primary-col h2,
+    /* div.primary-col h2, */
     div.secondary-col h2 {
         font-size: .75rem;
     }
     div.dropdown-content a {
         padding: 0.5rem;
     }
+    h3.accomplish {
+        font-size: 1.75rem;
+    }
     p {
         font-size: 1.65rem;
-        margin-bottom: 1.8em;
+        margin-bottom: 2em;
+    }
+    footer p {
+        font-size: 1rem;
     }
 }
 
@@ -429,12 +445,24 @@ footer ul {
     body {
         font-size: 1rem;
     }
+    h1.name a {
+        font-size: 2.5rem;
+    }
     h2.headline {
         font-size: 1.75rem;
     }
     p {
         font-size: 0.75rem;
         margin-bottom: 1.8em;
+    }
+    h3.accomplish {
+        font-size: 1.75rem;
+    }
+    dt.year {
+        font-size: 1.25rem;
+    }
+    dd.exhibit {
+        font-size: 1.1rem;
     }
     div.container h2,
     div.primary-col h2,
@@ -455,7 +483,7 @@ footer ul {
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
-    header h1.name a {
+    h1.name a {
         font-size: 2.75rem;
     }
     h2.headline {
@@ -476,6 +504,12 @@ footer ul {
     div.detail-list ul li p.details {
         margin-bottom: 0.5rem;
     }
+    h3.accomplish {
+        font-size: 1.75rem;
+    }
+    dt.year {
+        font-size: 1.5rem;
+    }
 }
 
 
@@ -491,8 +525,18 @@ footer ul {
     div.primary-col h2 {
         font-size: 1.75rem;
     }
+    p.concept {
+        font-size: 1.25rem;
+    }
     ul.top-nav li a {
         font-size: 1.25rem;
+    }
+    dt.year {
+        font-size: 1.5rem;
+    }
+    dd.exhibit {
+        font-size: 1.25rem;
+        line-height: 1.25;
     }
 }
 
@@ -526,5 +570,12 @@ footer ul {
         padding-top: 0.1rem;
         margin-top: 0.1rem;
         line-height: 1;
+    }
+    dt.year {
+        font-size: 1.5rem;
+    }
+    dd.exhibit {
+        font-size: 1.25rem;
+        line-height: 1.25;
     }
 }
