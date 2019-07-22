@@ -92,8 +92,7 @@ div.secondary-col h2 {
 
 /*---------NAVIGATION----------*/
 
-.top-nav,
-div.dropdown {
+.top-nav {
     display: flex;
     flex-wrap: wrap;
 }
@@ -101,6 +100,7 @@ div.dropdown {
 .name a,
 .top-nav a {
     font-size: 1.25em;
+    /* padding: 3vw; */
     text-transform: uppercase;
     text-align: center;
     background-color: rgb(13, 26, 0);
@@ -109,7 +109,7 @@ div.dropdown {
 ul.top-nav {
     background-color: rgb(13, 26, 0);
     margin: 1vw 0;
-    padding: 0;
+    padding: 0 3vw;
 }
 
 ul.top-nav li {
