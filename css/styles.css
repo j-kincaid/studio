@@ -3,6 +3,8 @@
 jessicakincaid.com
 public_html revision
 
+passed W3C CSS Validator for TextArea (CSS level 3 + SVG)
+
 July 22, 2019
 
 
@@ -515,8 +517,6 @@ footer ul {
     }
     div.dropdown-content a {
         padding: 1.75rem;
-        /* margin-right: .5rem; */
-        /* padding-right: .5rem; */
     }
     p.description {
         font-size: 2rem;
