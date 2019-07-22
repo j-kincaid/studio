@@ -52,6 +52,7 @@ p {
 
 div.hero h2 {
     font-size: 1.75em;
+    padding: 0 2vw;
 }
 
 h2,
@@ -95,6 +96,7 @@ div.secondary-col h2 {
 .top-nav {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .name a,
@@ -108,15 +110,15 @@ div.secondary-col h2 {
 
 ul.top-nav {
     background-color: rgb(13, 26, 0);
-    margin: 1vw 0;
-    padding: 0 3vw;
+    /* margin: 1vw 0; */
+    padding: 0;
 }
 
 ul.top-nav li {
     max-width: 8vw;
     display: block;
     margin: 2vw 3vw;
-    padding-left: 5vw;
+    /* padding-left: 5vw; */
 }
 
 ul.top-nav li a:hover,
@@ -132,6 +134,10 @@ ul.top-nav li a:active,
 
 
 /* ---- Dropdown Theme submenu  ---- */
+
+div.dropdown {
+    flex: 1;
+}
 
 .dropbtn {
     font-size: 1.25em;
@@ -281,6 +287,7 @@ p.concept {
     font-size: 1.75vw;
     padding: 1em;
     color: rgb(215, 223, 204);
+    background-color: rgb(13, 26, 0);
 }
 
 dd.exhibit {
