@@ -381,16 +381,24 @@ footer ul {
     ul.top-nav {
         display: flex;
         flex-wrap: wrap;
-        margin-right: 3rem;
+        flex-direction: column;
+        /* margin-right: 3rem; */
+        justify-content: center;
+    }
+    button.dropbtn {
+        width: 3rem;
     }
     ul.top-nav li a,
     div.dropdown-content li a,
     button.dropbtn {
         margin: 0.25rem;
-        font-size: 0.45rem;
+        font-size: 0.4rem;
     }
     h3.accomplish {
         font-size: 1.85rem;
+    }
+    dd.exhibit {
+        margin-top: 5%;
     }
 }
 
@@ -413,13 +421,7 @@ footer ul {
         margin-right: 3rem;
     }
     button.dropbtn {
-        width: 4rem;
-    }
-    ul.top-nav li a,
-    div.dropdown-content li a,
-    button.dropbtn {
-        margin: 0.25rem;
-        font-size: 0.45rem;
+        width: 3.25rem;
     }
     div.primary-col h2,
     p.description {
@@ -442,6 +444,9 @@ footer ul {
     }
     h3.accomplish {
         font-size: 1.75rem;
+    }
+    dd.exhibit {
+        margin-top: 8%;
     }
     p {
         font-size: 1.65rem;
@@ -484,7 +489,10 @@ footer ul {
         font-size: 1rem;
     }
     ul.top-nav {
-        margin-right: 3rem;
+        margin-right: 4.5rem;
+    }
+    button.dropbtn {
+        width: 4.5rem;
     }
     ul.top-nav li a,
     div.dropdown-content li a,
@@ -492,6 +500,9 @@ footer ul {
         margin: 2px;
         font-size: 1.5rem;
         border-style: none;
+    }
+    dd.exhibit {
+        margin-top: 8%;
     }
 }
 
