@@ -378,9 +378,16 @@ footer ul {
     p.description {
         font-size: .5rem;
     }
-    ul.top-nav li {
-        margin-right: 5rem;
-        font-size: 1rem;
+    ul.top-nav {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 3rem;
+    }
+    ul.top-nav li a,
+    div.dropdown-content li a,
+    button.dropbtn {
+        margin: 0.25rem;
+        font-size: 0.45rem;
     }
     h3.accomplish {
         font-size: 1.85rem;
@@ -401,11 +408,18 @@ footer ul {
         font-size: 1.35rem;
     }
     ul.top-nav {
+        display: flex;
+        flex-wrap: wrap;
         margin-right: 3rem;
     }
-    ul.top-nav li a {
-        font-size: 1.5rem;
-        margin: 2px;
+    button.dropbtn {
+        width: 4rem;
+    }
+    ul.top-nav li a,
+    div.dropdown-content li a,
+    button.dropbtn {
+        margin: 0.25rem;
+        font-size: 0.45rem;
     }
     div.primary-col h2,
     p.description {
@@ -415,7 +429,7 @@ footer ul {
     div.dropdown-content li a,
     button.dropbtn {
         margin: 2px;
-        font-size: 1.15rem;
+        font-size: 1rem;
         border-style: none;
     }
     div.container h2,
@@ -448,7 +462,7 @@ footer ul {
     h1.name a {
         font-size: 2.5rem;
     }
-    h2.headline {
+    header h2.headline {
         font-size: 1.75rem;
     }
     p {
@@ -474,8 +488,10 @@ footer ul {
     }
     ul.top-nav li a,
     div.dropdown-content li a,
-    .dropbtn {
-        font-size: 1.25rem;
+    button.dropbtn {
+        margin: 2px;
+        font-size: 1.5rem;
+        border-style: none;
     }
 }
 
@@ -484,10 +500,10 @@ footer ul {
 
 @media only screen and (min-width: 768px) {
     h1.name a {
-        font-size: 2.75rem;
+        font-size: 3.75rem;
     }
-    h2.headline {
-        font-size: 2.25rem;
+    header h2.headline {
+        font-size: 3.25rem;
     }
     p {
         font-size: 1rem;
@@ -500,6 +516,13 @@ footer ul {
     }
     ul.top-nav li {
         font-size: 1rem;
+    }
+    ul.top-nav li a,
+    div.dropdown-content li a,
+    button.dropbtn {
+        margin: 2px;
+        font-size: 1.75rem;
+        border-style: none;
     }
     div.detail-list ul li p.details {
         margin-bottom: 0.5rem;
