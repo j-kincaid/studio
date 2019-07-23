@@ -5,7 +5,7 @@ public_html revision
 
 passed W3C CSS Validator for TextArea (CSS level 3 + SVG)
 
-July 22, 2019
+July 23, 2019
 
 
 /* color palette
@@ -37,6 +37,12 @@ body {
     width: 98%;
 }
 
+div.hero,
+div.container {
+    background-color: rgb(13, 26, 0);
+    color: rgb(215, 223, 204);
+}
+
 h2.headline {
     font-size: 4.5vw;
     padding: 0.25vw 0 0 6vw;
@@ -60,7 +66,8 @@ div.hero h2 {
 h2,
 h3,
 a {
-    margin: 0;
+    margin-bottom: 1vh;
+    padding-bottom: 0;
     color: #fff;
 }
 
@@ -81,8 +88,6 @@ div.secondary-col h2 {
     font-size: 1.25em;
     font-style: italic;
     padding: 1em 1em 0.25em 1em;
-    background-color: rgb(13, 26, 0);
-    color: rgb(215, 223, 204);
 }
 
 
@@ -119,15 +124,12 @@ ul.top-nav li {
     margin: 2vw 3vw;
 }
 
-ul.top-nav li a:hover,
-.dropbtn {
-    color: #7EB834;
-}
-
 ul.top-nav li a:active,
 .dropbtn {
+    text-transform: uppercase;
     color: rgb(142, 243, 11);
-    background-color: rgb(50, 80, 14);
+    border-color: rgb(13, 26, 0);
+    background-color: rgb(13, 26, 0);
 }
 
 
@@ -139,9 +141,6 @@ div.dropdown {
 
 .dropbtn {
     font-size: 1.25rem;
-    text-transform: uppercase;
-    background-color: rgb(13, 26, 0);
-    border-color: rgb(13, 26, 0);
 }
 
 .dropdown-content {
@@ -203,10 +202,6 @@ dt.year {
     color: rgb(119, 128, 108);
 }
 
-div.hero {
-    background-color: rgb(13, 26, 0);
-}
-
 
 /* ---- Page Elements ---- */
 
@@ -249,31 +244,27 @@ li {
 div.container,
 div.hero {
     width: 95%;
-    padding: 5vw;
+    padding: 6vw;
     margin: auto;
-    background-color: rgb(13, 26, 0);
-    color: rgb(215, 223, 204);
-}
-
-ul.detail-list li {
-    color: rgb(215, 223, 204);
-    margin: 0;
-}
-
-p.details {
-    display: inline;
-    font-size: 0.85rem;
 }
 
 ul.detail-list {
     padding-bottom: 1.5em;
-    margin: 0;
+}
+
+ul.detail-list li {
+    color: rgb(215, 223, 204);
 }
 
 div.detail-list,
 p.description {
     background-color: rgb(13, 26, 0);
     color: rgb(215, 223, 204);
+}
+
+p.details {
+    display: inline;
+    font-size: 1.25rem;
 }
 
 p.description {
@@ -290,10 +281,22 @@ p.concept {
     background-color: rgb(13, 26, 0);
 }
 
+
+/* -------------About Page ---------------*/
+
+
+/* -------------Resume Page ---------------*/
+
+
+/* -------------Resume Page ---------------*/
+
 dd.exhibit {
     width: 88%;
     padding-bottom: 1vh;
 }
+
+
+/* -------------Contact Page ---------------*/
 
 div#contactForm {
     background-color: rgb(13, 26, 0);
@@ -369,9 +372,6 @@ footer ul {
     div#contactForm h2 {
         font-size: 0.75rem;
     }
-    ul.detail-list li {
-        font-size: 0.25rem;
-    }
     p.details {
         font-size: .75rem;
     }
@@ -392,6 +392,9 @@ footer ul {
     button.dropbtn {
         margin: 0.25rem;
         font-size: 0.4rem;
+    }
+    ul.detail-list li {
+        font-size: 0.25rem;
     }
     h3.accomplish {
         font-size: 1.85rem;
@@ -423,9 +426,8 @@ footer ul {
     button.dropbtn {
         width: 5rem;
     }
-    div.primary-col h2,
-    p.description {
-        font-size: 1.25rem;
+    div.dropdown-content a {
+        padding: 0.5rem;
     }
     ul.top-nav li a,
     div.dropdown-content li a,
@@ -435,22 +437,28 @@ footer ul {
         border-style: none;
     }
     div.container h2,
-    /* div.primary-col h2, */
     div.secondary-col h2 {
         font-size: .75rem;
     }
-    div.dropdown-content a {
-        padding: 0.5rem;
+    div.primary-col h2,
+    p.description {
+        font-size: 1.45rem;
+    }
+    ul.detail-list {
+        margin-top: 1.5vh;
+    }
+    p.details {
+        font-size: 1.1rem;
+    }
+    p {
+        font-size: 2rem;
+        margin-bottom: 2em;
     }
     h3.accomplish {
         font-size: 1.75rem;
     }
     dd.exhibit {
         margin-top: 8%;
-    }
-    p {
-        font-size: 1.65rem;
-        margin-bottom: 2em;
     }
     footer p {
         font-size: 1rem;
@@ -471,7 +479,7 @@ footer ul {
         font-size: 1.75rem;
     }
     p {
-        font-size: 0.75rem;
+        font-size: 1.25rem;
         margin-bottom: 1.8em;
     }
     h3.accomplish {
@@ -482,6 +490,7 @@ footer ul {
     }
     dd.exhibit {
         font-size: 1.1rem;
+        margin-top: 8%;
     }
     div.container h2,
     div.primary-col h2,
@@ -501,9 +510,6 @@ footer ul {
         font-size: 1.5rem;
         border-style: none;
     }
-    dd.exhibit {
-        margin-top: 8%;
-    }
 }
 
 
@@ -517,7 +523,7 @@ footer ul {
         font-size: 3.25rem;
     }
     p {
-        font-size: 1rem;
+        font-size: 1.5rem;
         margin-bottom: 1.8em;
     }
     div.container h2,
