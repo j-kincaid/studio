@@ -382,11 +382,10 @@ footer ul {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        /* margin-right: 3rem; */
         justify-content: center;
     }
     button.dropbtn {
-        width: 3rem;
+        width: 4rem;
     }
     ul.top-nav li a,
     div.dropdown-content li a,
@@ -418,10 +417,16 @@ footer ul {
     ul.top-nav {
         display: flex;
         flex-wrap: wrap;
-        margin-right: 3rem;
+        flex-direction: column;
+        justify-content: center;
     }
+    /* ul.top-nav {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 3rem;
+    } */
     button.dropbtn {
-        width: 3.25rem;
+        width: 4rem;
     }
     div.primary-col h2,
     p.description {
