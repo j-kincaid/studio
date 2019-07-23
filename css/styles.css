@@ -9,13 +9,10 @@ July 23, 2019
 
 
 /* color palette
-lightest gray = color: rgb(165, 177, 149);
-background light greenish gray = color: rgb(165, 177, 149);
-slate greenish gray =  color: rgb(119, 128, 108);
-hover Pale highlight citrus yellow = color: rgb(186, 245, 109);
-Bright lime = color: rgb(142, 243, 11);
-Dark green = background-color: rgb(13, 26, 0);  
-background Darkest green =  background-color: rgb(13, 26, 0);
+PAGE BACKGROUND lightest gray = background-color: rgb(165, 177, 149);
+HEADLINE, YEAR slate greenish gray =  color: rgb(119, 128, 108);
+HIGHLIGHT/hover Pale highlight citrus yellow = color: rgb(186, 245, 109);
+BACKGROUND Darkest green =  background-color: rgb(13, 26, 0);
 */
 
 
@@ -41,12 +38,9 @@ div.hero,
 div.container {
     background-color: rgb(13, 26, 0);
     color: rgb(215, 223, 204);
-}
-
-h2.headline {
-    font-size: 4.5vw;
-    padding: 0.25vw 0 0 6vw;
-    background-color: rgb(13, 26, 0);
+    width: 95%;
+    padding: 6vw;
+    margin: auto;
 }
 
 ul {
@@ -58,9 +52,18 @@ p {
     margin-bottom: 1.8em;
 }
 
+.hero-img {
+    max-width: 100%;
+}
+
 div.hero h2 {
     font-size: 1.75em;
     padding: 0 2vw;
+}
+
+h3 {
+    font-size: 2vw;
+    margin: auto;
 }
 
 h2,
@@ -69,9 +72,6 @@ a {
     margin-bottom: 1vh;
     padding-bottom: 0;
     color: #fff;
-}
-
-a {
     text-decoration: none;
 }
 
@@ -96,6 +96,43 @@ div.secondary-col h2 {
 ==================================== */
 
 
+/*---------HEADER----------*/
+
+header.main-header {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 95%;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    color: rgb(215, 223, 204);
+    background-color: rgb(13, 26, 0);
+}
+
+h1.name {
+    font-size: 4.5vw;
+    margin: 0;
+    padding: 5vw 3vw 0 5vw;
+    text-transform: uppercase;
+}
+
+h1 a:visited,
+h1.name:visited {
+    color: rgb(138, 151, 120);
+}
+
+h1 a:hover {
+    color: rgb(186, 245, 109);
+}
+
+h2.headline {
+    font-size: 4.5vw;
+    padding: 0.25vw 0 0 6vw;
+    color: rgb(119, 128, 108);
+    margin-bottom: 0;
+}
+
+
 /*---------NAVIGATION----------*/
 
 .top-nav {
@@ -109,11 +146,9 @@ div.secondary-col h2 {
     font-size: .25rem;
     text-transform: uppercase;
     text-align: center;
-    background-color: rgb(13, 26, 0);
 }
 
 ul.top-nav {
-    background-color: rgb(13, 26, 0);
     padding: 0;
 }
 
@@ -127,13 +162,12 @@ ul.top-nav li {
 ul.top-nav li a:active,
 .dropbtn {
     text-transform: uppercase;
-    color: rgb(142, 243, 11);
-    border-color: rgb(13, 26, 0);
+    color: rgb(186, 245, 109);
     background-color: rgb(13, 26, 0);
 }
 
 
-/* ---- Dropdown Theme submenu  ---- */
+/* ---- Dropdown menu  ---- */
 
 div.dropdown {
     flex: 1;
@@ -146,6 +180,7 @@ div.dropdown {
 .dropdown-content {
     display: none;
     position: absolute;
+    color: rgb(186, 245, 109);
     background-color: rgb(13, 26, 0);
     z-index: 1;
     max-width: 10em;
@@ -153,7 +188,6 @@ div.dropdown {
 }
 
 .dropdown-content a {
-    color: rgb(142, 243, 11);
     padding: .75em 2.5em;
     max-width: 8vw;
     font-size: 1.25rem;
@@ -169,7 +203,7 @@ div.dropdown {
 }
 
 .dropdown-content a:visited {
-    color: rgb(142, 243, 11);
+    color: rgb(186, 245, 109);
 }
 
 .dropdown:hover .dropdown-content {
@@ -178,87 +212,13 @@ div.dropdown {
 }
 
 
-/* ---- Layout Containers ---- */
-
-header.main-header {
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    width: 95%;
-    padding-top: .5em;
-    padding-bottom: .5em;
-    background-color: rgb(13, 26, 0);
-}
-
-section.accomplish {
-    width: 98%;
-}
-
-h3.accomplish {
-    color: rgb(186, 245, 109);
-}
-
-dt.year {
-    color: rgb(119, 128, 108);
-}
-
-
-/* ---- Page Elements ---- */
-
-.hero-img {
-    max-width: 100%;
-}
-
-.headline {
-    color: rgb(119, 128, 108);
-    background-color: rgb(13, 26, 0);
-    margin-bottom: 0;
-}
-
-h1.name {
-    font-size: 4.5vw;
-    margin: 0;
-    padding: 5vw 3vw 0 5vw;
-    color: rgb(215, 223, 204);
-    text-transform: uppercase;
-}
-
-h1 a:visited,
-h1.name:visited {
-    color: rgb(138, 151, 120);
-}
-
-h1 a:hover {
-    color: rgb(142, 243, 11);
-}
-
-h3 {
-    font-size: 2vw;
-    margin: auto;
-}
-
-li {
-    color: rgb(186, 245, 109);
-}
-
-div.container,
-div.hero {
-    width: 95%;
-    padding: 6vw;
-    margin: auto;
-}
+/* -------------details, image descriptions ---------------*/
 
 ul.detail-list {
     padding-bottom: 1.5em;
 }
 
 ul.detail-list li {
-    color: rgb(215, 223, 204);
-}
-
-div.detail-list,
-p.description {
-    background-color: rgb(13, 26, 0);
     color: rgb(215, 223, 204);
 }
 
@@ -277,18 +237,24 @@ p.description {
 p.concept {
     font-size: 1.1rem;
     padding: 1em;
-    color: rgb(215, 223, 204);
-    background-color: rgb(13, 26, 0);
+    /* color: rgb(215, 223, 204); */
+    /* background-color: rgb(13, 26, 0); */
 }
 
 
-/* -------------About Page ---------------*/
-
-
 /* -------------Resume Page ---------------*/
 
+section.accomplish {
+    width: 98%;
+}
 
-/* -------------Resume Page ---------------*/
+h3.accomplish {
+    color: rgb(186, 245, 109);
+}
+
+dt.year {
+    color: rgb(119, 128, 108);
+}
 
 dd.exhibit {
     width: 88%;
@@ -323,7 +289,7 @@ h2.contact {
 }
 
 
-/*-------------------------------------------------FOOTER--------------------------------------*/
+/*----------FOOTER-------------*/
 
 footer {
     background-color: rgb(215, 223, 204);
