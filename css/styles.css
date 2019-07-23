@@ -420,13 +420,8 @@ footer ul {
         flex-direction: column;
         justify-content: center;
     }
-    /* ul.top-nav {
-        display: flex;
-        flex-wrap: wrap;
-        margin-right: 3rem;
-    } */
     button.dropbtn {
-        width: 4rem;
+        width: 5rem;
     }
     div.primary-col h2,
     p.description {
@@ -497,7 +492,7 @@ footer ul {
         margin-right: 4.5rem;
     }
     button.dropbtn {
-        width: 4.5rem;
+        width: 6rem;
     }
     ul.top-nav li a,
     div.dropdown-content li a,
@@ -533,6 +528,9 @@ footer ul {
     ul.top-nav li {
         font-size: 1rem;
     }
+    button.dropbtn {
+        width: 7rem;
+    }
     ul.top-nav li a,
     div.dropdown-content li a,
     button.dropbtn {
@@ -566,6 +564,9 @@ footer ul {
     }
     p.concept {
         font-size: 1.25rem;
+    }
+    button.dropbtn {
+        width: 8rem;
     }
     ul.top-nav li a {
         font-size: 1.25rem;
