@@ -22,9 +22,9 @@ BACKGROUND Darkest green =  background-color: rgb(13, 26, 0);
 
 * {
     box-sizing: border-box;
-    font-family: 'Droid Sans', sans-serif;
-    font-weight: lighter;
+    font-family: 'Encode Sans Condensed', sans-serif;
     width: 100%;
+    font-weight: lighter;
 }
 
 body {
@@ -48,8 +48,9 @@ ul {
 }
 
 p {
-    font-size: .95em;
+    font-size: 1.25em;
     margin-bottom: 1.8em;
+    font-family: 'Lato', sans-serif;
 }
 
 .hero-img {
